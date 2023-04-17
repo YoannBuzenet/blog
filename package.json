@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:start" :"npm run dev:start:back && npm run dev:start:front",
+    "dev:start:back" :"cd back && npm run back:start",
+    "dev:start:front" :"cd front && npm run front:start"
+
   },
   "repository": {
     "type": "git",

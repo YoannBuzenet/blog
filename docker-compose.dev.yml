@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 
 services:
   mysql_db:
@@ -29,8 +29,7 @@ services:
       - mysql_db    
 
   nginx:
-    build: ./nginx/dev
-    container_name: strapi_nginx
+    container_name: nginx
     restart: always
     ports:
       - "80:80"
@@ -46,7 +45,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin:5
-    container_name: strapi_pma
+    container_name: pma
     restart: always
     links:
       - mysql_db

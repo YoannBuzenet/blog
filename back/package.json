@@ -1,0 +1,49 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "back-end for the blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:debug": "export NODE_ENV=development& node index.js",
+
+    "create:db:dev": "export NODE_ENV=development& dotenv -e .env.local sequelize db:create && npx sequelize-cli db:migrate",
+    "create:db:dev:seed": "export NODE_ENV=development& dotenv -e .env.local sequelize db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all --debug",
+    "reset:db:dev": "export NODE_ENV=development& sequelize db:create && npx sequelize-cli db:migrate:undo:all && npx sequelize-cli db:migrate",
+    "reset:db:dev:seed": "export NODE_ENV=development& sequelize db:create && npx sequelize-cli db:migrate:undo:all && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all --debug",
+  
+    "dev:start": "npx pm2 --name backend start index.js --watch && npm run stack:start",
+    "dev:stop": "npx pm2 stop all && pm2 del all && npm run stack:stop",
+    
+
+    "stack:start" : "docker-compose up -d",
+    "stack:stop" : "docker-compose down"
+
+  
+  },
+  "keywords": [
+    "blog",
+    "back-end"
+  ],
+  "author": "Yoann Buzenet",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.0.0",
+    "@fastify/multipart": "^7.1.0",
+    "@fastify/static": "^6.5.0",
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.0.0",
+    "dotenv-cli": "^5.0.0",
+    "fastify": "^4.11.0",
+    "mysql2": "^2.3.3",
+    "pino": "^8.2.0",
+    "pino-pretty": "^7.5.3",
+    "sequelize": "^6.17.0",
+    "sequelize-cli": "^6.4.1",
+    "sharp": "^0.30.7",
+    "winston": "^3.6.0"
+  },
+"devDependencies" : {
+    "pm2" : "5.2.2"
+  }
+}

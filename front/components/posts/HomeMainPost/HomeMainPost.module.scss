@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 1rem;
+  
+}
+
+/* Uncomment pour récupérer l'effet de zoom au hover (peut etre overkill) */
+/* .container:hover img,
+.container:focus img {
+  transform: scale(1.05);
+} */
+
+.articleTitle {
+  margin-top: 2rem;
+}
+
+.container .articleTitle p {
+  margin-top: 1rem;
+  font-size: 3rem;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+   }
+}
+
+p.articleDate {
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.imageContainer {
+  width: 800px;
+  @media screen and (max-width: 768px) {
+    width : 300px;
+   }
+}
+
+.imageContainer img {
+  width: 800px;
+  transition: all 0.5s;
+  @media screen and (max-width: 768px) {
+    width : 100%;
+   }
+}
+
+.tagContainer {
+  display: flex;
+  justify-content: flex-start;
+}

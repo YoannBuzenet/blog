@@ -1,0 +1,22 @@
+.container {
+
+    display: flex;
+    justify-content: space-around;
+
+    &__leftDiv {
+        width : 30%;
+    }
+
+    &__centralDiv {
+        width : 55%;
+        }
+
+    &__rightDiv {
+        width : 10%;
+    
+    }
+
+}
+
+
+

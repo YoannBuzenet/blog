@@ -1,0 +1,13 @@
+.container {
+  margin: 2rem;
+}
+
+.link {
+  text-align: right;
+  font-size: 1.6rem;
+}
+
+.answerContent {
+  border: 1px solid black;
+  padding: 1rem;
+}

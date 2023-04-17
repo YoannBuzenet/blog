@@ -1,0 +1,29 @@
+.editableElement {
+    margin-bottom: 2rem;
+  }
+  
+  .mainPicture {
+    display: flex;
+    justify-content: center;
+
+    & img {
+      max-width: 500px;
+      max-height: 500px;
+    }
+  }
+
+  .articleContainer {
+
+    padding-bottom: 20rem;
+
+    &__title {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+
+  .addSibilingButtonContainer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+  }

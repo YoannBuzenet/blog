@@ -1,0 +1,17 @@
+{
+  "generic.language.english": "Anglais",
+  "generic.language.french": "Français",
+  "generic.connect.google": "Se connecter avec Google",
+
+  "page.login.button.login": "Se connecter / S'inscrire",
+  "page.login.disclaimer": "Vous pourrez changer le pseudo affiché et l'avatar utilisé.",
+
+  "navbar.button.home": "Accueil",
+  "navbar.button.login": "Se Connecter",
+  "navbar.userMenu.logout": "Déconnection",
+  "navbar.userMenu.profile": "Profil",
+
+  "answer.parsing.error": "Il y a eu une erreur pendant la lecture de l'erreur.",
+  "answer.creation.success": "Votre réponse a été créée.",
+  "answer.creation.error": "Il y a eu une erreur lors de l'enregistrement de votre réponse. Merci de réessayer ultérieurement."
+}

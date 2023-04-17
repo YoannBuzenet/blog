@@ -1,0 +1,183 @@
+:root {
+  --border-radius: 5px;
+  --height-nav-bar: 50px;
+  --general-container-width: 80%;
+  --70-container-width: 70%;
+  --home-container-width: 60%;
+  --managePage-container-width: 50%;
+  --page-container-width: 35%;
+
+}
+
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // background-color: var(--main-background-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+span {
+  font-size: 1.6rem;
+}
+
+.paragraphSize {
+  font-size: 1.6rem;
+}
+
+.globalPadding {
+  padding: 20px;
+}
+
+div.activeMenu {
+  background-color: var(--main-bg-color2);
+}
+
+// Content in pages
+.contentPageContainer {
+  width: var(--page-container-width);
+  margin: 0 auto;
+
+  @media screen and (max-width: 1500px) {
+    width: var(--70-container-width);
+   }
+
+  @media screen and (max-width: 1024px) {
+    width: var(--general-container-width);
+   }
+}
+
+.largePageContainer {
+  width: var(--home-container-width);
+  margin: 0 auto;
+
+  @media screen and (max-width: 1500px) {
+    width: var(--70-container-width);
+   }
+
+  @media screen and (max-width: 1024px) {
+    width: var(--general-container-width);
+   }
+}
+
+.manageContentPageContainer {
+  width: var(--managePage-container-width);
+  margin: 0 auto;
+}
+
+// Tables lines
+.firstLine {
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+.lastLine {
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.svg-button {
+  cursor: pointer;
+}
+.svg-button:hover {
+  fill: black;
+}
+.svg-button:active {
+  fill: white;
+}
+
+.container {
+  max-width: var(--home-container-width);
+  margin: auto;
+}
+
+.belowNavbar {
+  margin-top: calc(var(--height-nav-bar) + 20px);
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.fieldWithCTA {
+  position: relative;
+}
+.field.fieldWithCTA div.wysiwyg {
+  width: 90%;
+}
+.fieldWithCTA > span {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.actionableSvg:hover {
+  fill: red;
+}
+
+.generalLink {
+  cursor: pointer;
+  & :hover {
+    text-decoration: underline;
+  }
+}
+
+.h1 {
+  font-size: 2rem;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.h3 {
+  font-size: 1.8rem;
+}
+
+div.hideWhenDesktop {
+  @media (min-width: 968px) {
+          display:none;
+      }
+
+}
+div.hideWhenTablet {
+  @media (max-width: 968px) {
+          display:none;
+      }
+
+}

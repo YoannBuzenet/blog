@@ -1,0 +1,54 @@
+.wysiwygDisplay p,
+.wysiwygDisplay span {
+  font-size: inherit;
+  line-height: 2.8rem;
+}
+
+.wysiwygDisplay p {
+  margin-top: 1rem;
+}
+
+/* Par le biais du WYSIWYG, les h1 encapsulent des <p> */
+h1 .wysiwygDisplay p {
+  line-height: 0.9;
+}
+
+.articleDescription .wysiwygDisplay p {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  line-height: 3rem;
+}
+
+.wysiwygDisplay pre {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: inline;
+  background-color: var(--black-075);
+  border-radius: var(--border-radius);
+}
+
+.wysiwygDisplay .iframeContainer {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+
+}
+
+.imageDisplay {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.imageDisplay img {
+  width: 100%
+}
+
+/* On screens that are 768px or less*/
+@media screen and (max-width: 768px) {
+  .articleDescription .wysiwygDisplay p {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,64 @@
+@import "/styles/generic/globals.scss";
+@value borderGlobal from "../../../styles/generic/genericStyle.module.css";
+
+.navBarContainer {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--height-nav-bar);
+  border-bottom: 1px solid rgb(235, 232, 232);
+  z-index: 7;
+}
+
+.homeButton {
+  padding: 1.5rem;
+}
+
+.navBarDisplay {
+  display: flex;
+  height: 100%;
+  margin: auto;
+}
+
+.leftPart,
+.rightPart {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.rightPartDesktop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rightPartDesktop>div {
+  margin-left: 10px
+}
+
+.navbarFlags {
+  position: relative;
+}
+
+.userMenuAccessContainer {
+  position: relative;
+}
+
+.userMenuAccess {
+  padding: 15px;
+}
+
+.burgerMenuContainer {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burgerMenuSvg {
+  cursor: pointer;
+  fill: black;
+}

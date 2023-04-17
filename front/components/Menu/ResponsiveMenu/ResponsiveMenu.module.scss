@@ -1,0 +1,41 @@
+.container {
+    position: absolute;
+    z-index: 10;
+    right : 0;
+    top: 0;
+    background-color: white;
+    width: 50%;
+    padding : 3rem;
+    box-shadow: 1px 1px 5px black;
+}
+
+.link {
+    padding-top : 1rem
+}
+
+.anchorTag {
+    font-family: "Oswald";
+    text-transform: uppercase;
+    color: black;;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.svgContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeSvg {
+    cursor: pointer;
+}
+
+.menuLinkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > div {
+        height : 50px;
+    }
+}

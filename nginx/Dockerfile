@@ -6,4 +6,4 @@ COPY nginx_logrotate.conf /etc/logrotate.d/nginx_logrotate.conf
 
 COPY upstream.conf /etc/nginx/conf.d/
 
-COPY strapi.conf /etc/nginx/conf.d/default.conf
+COPY nginxProd.conf /etc/nginx/conf.d/default.conf

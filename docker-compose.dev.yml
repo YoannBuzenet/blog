@@ -3,7 +3,7 @@ version: "3.8"
 services:
   mysql_db:
     image: mysql:8.0.26
-    container_name: strapi_mysql
+    container_name: db_mysql
     restart: always
     command: mysqld --default-authentication-plugin=mysql_native_password
     volumes:

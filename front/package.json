@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "front:start": "pm2 --name front --no-autorestart start npm -- run dev"
+    "front:start": "pm2 --name front --no-autorestart start npm -- run dev",
+    "front:stop": "pm2 stop front && pm2 del front"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.18.2",

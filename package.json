@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YoannBuzenet/blogg.git"
+    "url": "git+https://github.com/YoannBuzenet/blog.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/YoannBuzenet/blogg/issues"
+    "url": "https://github.com/YoannBuzenet/blog/issues"
   },
-  "homepage": "https://github.com/YoannBuzenet/blogg#readme"
+  "homepage": "https://github.com/YoannBuzenet/blog#readme"
 }

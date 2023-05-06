@@ -1,0 +1,2 @@
+- Faire les dockerFile de front et back
+- Charger les env var pour les 2

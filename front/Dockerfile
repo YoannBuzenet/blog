@@ -1,5 +1,13 @@
-FROM node:18-alpine3.16
+FROM node:18-alpine3.16 as development
 
-# on doit build next pour la prod ?
-# On garde que le dist ?
-# et lancer depuis le build de prod
+COPY . .
+
+RUN npm install
+
+RUN npm run build
+
+FROM node:18-alpine3.16 as prod_build
+
+COPY --from=development ./build .
+
+ENTRYPOINT [ "npm","run","start" ]

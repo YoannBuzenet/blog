@@ -6,3 +6,8 @@
 
 - Dans `package.json`
   "react-image-manager": "file:../react-image-manager",
+
+# Docker - get the real error
+
+- Ajouter cet argument au début de la ligne
+- DOCKER_BUILDKIT=0 docker build . -t "blogtestfront"

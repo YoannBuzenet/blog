@@ -28,7 +28,7 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - mysql_db    
+      - backend
 
   nginx:
     container_name: nginx
@@ -42,8 +42,6 @@ services:
     #  - /etc/letsencrypt/live/tgit.fr/privkey.pem:/etc/letsencrypt/live/ec2-user/privkey.pem #remplacer tgit.fr par le nom de domaine final
     volumes:
       - ./nginx/docker/logs:/var/log/nginx
-    depends_on:
-      - strapi
 
   phpmyadmin:
     image: phpmyadmin:5

@@ -2,10 +2,12 @@ import style from "./SVGButton.module.scss";
 
 type SVGButtonProps = {
   handleClick: () => void;
-  name?: String;
-  Svg: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
+  name?: string;
+  Svg: React.FunctionComponent<
+    React.SVGAttributes<SVGElement> & { title: string }
+  >;
   classToAdd?: string;
-  svgTitle: String;
+  svgTitle: string;
 };
 
 const SVGButton = ({

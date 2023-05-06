@@ -3,9 +3,13 @@ import style from "./PopUpContainer.module.scss";
 import PopUpsDisplayedContext from "../../contexts/popUpsDisplay";
 import CloseMenu from "../../assets/svg/close/outline.svg";
 
+type CompoProps = {
+  handleClosePopUp: () => void;
+};
+
 type PopupProps = {
   index: number;
-  CompoToRender?: FC;
+  CompoToRender?: FC<CompoProps>;
 };
 
 const Popup = ({ index, CompoToRender, ...props }: PopupProps) => {

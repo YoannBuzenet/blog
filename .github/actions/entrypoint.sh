@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
+printenv
 echo "Hello $1"
 echo "key=$BLOG_SSH_PRIVATE_KEY"
 time=$(date)
